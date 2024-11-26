@@ -14,9 +14,15 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then make sure your PC/Laptop is connected to the same network as your mobile.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open console/command prompt on your PC/Laptop and find your device IP address using `ipconfig` on windows or `ifconfig` on MAC and Linux.
+
+Once you get your device's IPv4 Address, replace the localhost with this IP in your mobile's browser. 
+
+For eg: If your server is running on `localhost:3000` and your IPv4 is `192.168.0.0` then you should type `192.168.0.0:3000` in your mobile browser search bar. 
+
+Your application should now preview on mobile.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
